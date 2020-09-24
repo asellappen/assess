@@ -1,4 +1,7 @@
 language: generic
+arch:
+ - ppc64le
+ - amd64
 sudo: no
 env:
  - EVM_EMACS=emacs-git-snapshot-travis-linux-xenial
