@@ -1,0 +1,122 @@
+mkdir elpa-sandbox
+emacs --batch -q \
+--directory=. \
+--load test/local-sandbox.el \
+--eval '(assess-discover-run-and-exit-batch t)'
+Loading /etc/emacs/site-start.d/00debian.el (source)...
+Loading /etc/emacs/site-start.d/50autoconf.el (source)...
+Loading /etc/emacs/site-start.d/50cmake-data.el (source)...
+Contacting host: elpa.gnu.org:443
+Contacting host: stable.melpa.org:443
+Package refresh done
+Setting ‘package-selected-packages’ temporarily since "emacs -q" would overwrite customizations
+Setting ‘package-selected-packages’ temporarily since "emacs -q" would overwrite customizations
+Parsing tar file...
+Parsing tar file...done
+Extracting m-buffer-0.15/
+Extracting m-buffer-0.15/m-buffer-at.el
+Extracting m-buffer-0.15/m-buffer-macro.el
+Extracting m-buffer-0.15/m-buffer-doc.org
+Extracting m-buffer-0.15/m-buffer-pkg.el
+Extracting m-buffer-0.15/m-buffer.el
+Generating autoloads for m-buffer-at.el...
+Generating autoloads for m-buffer-at.el...done
+Generating autoloads for m-buffer-macro.el...
+Generating autoloads for m-buffer-macro.el...done
+Generating autoloads for m-buffer-pkg.el...
+Generating autoloads for m-buffer-pkg.el...done
+Generating autoloads for m-buffer.el...
+Generating autoloads for m-buffer.el...done
+Wrote /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-autoloads.el
+Wrote /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-autoloads.el
+Checking /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-at.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-autoloads.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-macro.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer-pkg.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/m-buffer-0.15/m-buffer.el...
+Done (Total of 3 files compiled, 2 skipped)
+Setting ‘package-selected-packages’ temporarily since "emacs -q" would overwrite customizations
+Contacting host: stable.melpa.org:443
+Parsing tar file...
+Parsing tar file...done
+Extracting load-relative-1.3.1/
+Extracting load-relative-1.3.1/load-relative-pkg.el
+Extracting load-relative-1.3.1/load-relative.el
+Extracting load-relative-1.3.1/el-get-install.el
+Generating autoloads for el-get-install.el...
+Generating autoloads for el-get-install.el...done
+Generating autoloads for load-relative-pkg.el...
+Generating autoloads for load-relative-pkg.el...done
+Generating autoloads for load-relative.el...
+Generating autoloads for load-relative.el...done
+Wrote /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/load-relative-autoloads.el
+Wrote /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/load-relative-autoloads.el
+Checking /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/el-get-install.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/load-relative-autoloads.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/load-relative-pkg.el...
+Compiling /home/ubuntu/assess/elpa-sandbox/26.3/load-relative-1.3.1/load-relative.el...
+Done (Total of 2 files compiled, 2 skipped)
+Loading /home/ubuntu/assess/assess-discover.el (source)...
+Loading /home/ubuntu/assess/test/assess-call-test.el (source)...
+Loading /home/ubuntu/assess/test/assess-discover-test.el (source)...
+Loading /home/ubuntu/assess/test/assess-robot-test.el (source)...
+Loading /home/ubuntu/assess/test/assess-test.el (source)...
+Loading /home/ubuntu/assess/test/local-sandbox.el (source)...
+Contacting host: stable.melpa.org:443
+Package refresh done
+‘m-buffer’ is already installed
+‘load-relative’ is already installed
+Loading /home/ubuntu/assess/assess-discover.el (source)...
+Running 46 tests (2020-09-29 08:50:16+0000)
+   passed   1/46  assess--test-indent-in-mode
+   passed   2/46  assess--test-indentation=
+   passed   3/46  assess-call-return-value
+   passed   4/46  assess-call-test-capture-fail
+   passed   5/46  assess-call-test-hook-fail
+   passed   6/46  assess-call-test-hook-test
+   passed   7/46  assess-discover-test
+   passed   8/46  assess-discover-test-has-this-been-defined
+   failed   9/46  assess-fail-for-sure
+   passed  10/46  assess-robot-test-execute-kmacro
+   passed  11/46  assess-robot-test-with-switched-buffer
+   passed  12/46  assess-robot-test-with-switched-buffer-string
+   passed  13/46  assess-robot-test-with-temp-switched-buffer
+   passed  14/46  assess-test-create-multiple-directories-and-files
+   passed  15/46  assess-test-create-multiple-files
+   passed  16/46  assess-test-create-nested-directories
+   passed  17/46  assess-test-create-non-empty-file
+   passed  18/46  assess-test-create-non-empty-nested-file
+   passed  19/46  assess-test-face-at-multiple-faces
+   passed  20/46  assess-test-face-at-multiple-positions
+   passed  21/46  assess-test-face-at-simple
+   passed  22/46  assess-test-face-at-with-m-buffer
+   passed  23/46  assess-test-face-at-with-strings
+   passed  24/46  assess-test-file-face-at
+   passed  25/46  assess-test-file-roundtrip-indentation-explain=
+   passed  26/46  assess-test-file-roundtrip-indentation=
+   passed  27/46  assess-test-nest-files-recursively
+   passed  28/46  assess-test-related-file
+   passed  29/46  assess-test-roundtrip-indentation-explain=
+   passed  30/46  assess-test-roundtrip-indentation=
+   passed  31/46  assess-test-with-find-file
+   passed  32/46  buffer-string=
+   passed  33/46  buffer=
+   passed  34/46  call-capture
+   passed  35/46  call-capture-deep
+   passed  36/46  call-capture-twice
+   passed  37/46  ensure-string
+   passed  38/46  explanation-extraction
+   passed  39/46  explanation-extraction-from-result
+   passed  40/46  file-string=
+   passed  41/46  issue-4-has-type-face
+   passed  42/46  issue-5-test-example
+   passed  43/46  plist-extraction
+   passed  44/46  preserved-buffer-list
+   passed  45/46  strings-with-unequal-properties
+   passed  46/46  with-temp-buffers
+
+Ran 46 tests, 46 results as expected (2020-09-29 08:50:17+0000)
+1 expected failures
+
