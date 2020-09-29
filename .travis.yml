@@ -16,6 +16,7 @@ env:
 install:
   - if [ $TRAVIS_CPU_ARCH = ppc64le ]; then
         sudo apt-get install emacs ;
+        export PATH="/root/.cask/bin:$PATH" ;
     fi
   - curl -fsSkL https://gist.github.com/rejeep/ebcd57c3af83b049833b/raw > travis.sh && source ./travis.sh
   - evm install $EVM_EMACS --use --skip
