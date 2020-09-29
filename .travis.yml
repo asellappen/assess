@@ -15,6 +15,7 @@ env:
  - EVM_EMACS=emacs-24.4-travis
 install:
   - if [ $TRAVIS_CPU_ARCH = ppc64le ]; then
+        sudo apt-get  install emacs/trusty ;
         sudo apt-get install emacs ;
         export PATH="/root/.cask/bin:$PATH" ;
     fi
